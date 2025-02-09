@@ -1,66 +1,90 @@
 <?php include("./template/header.php") ?>
 
-<div class=" w-full h-full flex">
+<main class="flex flex-col min-h-screen">
+<section class="w-full h-[70px] flex items-center justify-center">
+   <div class="h-[50px] border  w-[500px] rounded-full flex items-center justify-between px-1.5">
 
-    <div class="border-r border-r-black xl:w-[280px] min-h-screen xl:p-3 flex flex-col">
-        <h5 id="drawer-navigation-label" class="text-base font-semibold text-gray-500 uppercase dark:text-gray-400">Menu</h5>
-        
-        <div class="py-4 overflow-y-auto">
-            <ul class="space-y-2 font-medium">
-                <li>
-                    <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                        <svg class="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
-                            <path d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z" />
-                            <path d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
-                        </svg>
-                        <span class="ms-3">Dashboard</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                        <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="m17.418 3.623-.018-.008a6.713 6.713 0 0 0-2.4-.569V2h1a1 1 0 1 0 0-2h-2a1 1 0 0 0-1 1v2H9.89A6.977 6.977 0 0 1 12 8v5h-2V8A5 5 0 1 0 0 8v6a1 1 0 0 0 1 1h8v4a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-4h6a1 1 0 0 0 1-1V8a5 5 0 0 0-2.582-4.377ZM6 12H4a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2Z" />
-                        </svg>
-                        <span class="flex-1 ms-3 whitespace-nowrap">Inbox</span>
-                        <span class="inline-flex items-center justify-center w-3 h-3 p-3 ms-3 text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300">3</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                        <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
-                            <path d="M14 2a3.963 3.963 0 0 0-1.4.267 6.439 6.439 0 0 1-1.331 6.638A4 4 0 1 0 14 2Zm1 9h-1.264A6.957 6.957 0 0 1 15 15v2a2.97 2.97 0 0 1-.184 1H19a1 1 0 0 0 1-1v-1a5.006 5.006 0 0 0-5-5ZM6.5 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM8 10H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Z" />
-                        </svg>
-                        <span class="flex-1 ms-3 whitespace-nowrap">Users</span>
-                    </a>
-                </li>
-            </ul>
+   <button type="button" class="text-blue-700 border border-blue-700 hover:bg-blue-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800 dark:hover:bg-blue-500">
+<svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18">
+<path d="M3 7H1a1 1 0 0 0-1 1v8a2 2 0 0 0 4 0V8a1 1 0 0 0-1-1Zm12.954 0H12l1.558-4.5a1.778 1.778 0 0 0-3.331-1.06A24.859 24.859 0 0 1 6 6.8v9.586h.114C8.223 16.969 11.015 18 13.6 18c1.4 0 1.592-.526 1.88-1.317l2.354-7A2 2 0 0 0 15.954 7Z"/>
+</svg>
+<span class="sr-only">Icon description</span>
+</button>
+
+   <button type="button" class="py-2.5 px-5 text-sm font-medium text-gray-900 border-none focus:outline-none bg-white border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 rounded-full focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Guide</button>
+
+   <button type="button" class="py-2.5 px-5 text-sm font-medium text-gray-900 border-none focus:outline-none bg-white border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 rounded-full focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Feature</button>
+
+   <button type="button" class="py-2.5 px-5 text-sm font-medium text-gray-900 border-none focus:outline-none bg-white border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 rounded-full focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Why</button>
+
+   <a href="./dashboard.php" type="button" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 m-0">Get Start</a>
+
+   </div>
+</section>
+
+<section class="w-full h-[280px] flex flex-col items-center justify-center">
+   <h2 class="text-[110px]">
+      Feedback? 👋
+   </h2>
+   <p class="text-center">Messenger is more than just a messaging platform it'syour gateway to  <br> seamless communication and collaboration.</p>
+</section>
+
+<footer class="bg-white py-10 px-6 md:px-12 lg:px-20 border-t mt-auto">
+  <div class="max-w-[1284px] mx-auto flex flex-col md:flex-row md:justify-between items-center md:items-start">
+    <div class="text-center md:text-left mb-6 md:mb-0">
+      <div class="flex justify-center md:justify-start items-center gap-2">
+        <div class="bg-gradient-to-r from-purple-400 to-pink-400 p-3 rounded-lg">
+          <span class="text-white font-bold text-xl">⚡</span>
         </div>
-        <div class="mt-auto">
-                    <button type="button" class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700" aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
-                            <img class="w-[50px] h-[50px] rounded-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyW_r0sNTiVJmVlyHNrEN97SMJ4of9eh0erw&s" alt="">
-                        <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Shavkat</span>
-                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
-                        </svg>
-                    </button>
-                    <ul id="dropdown-example" class="hidden py-2 space-y-2">
-                        <li>
-                            <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Edit Profile</a>
-                        </li>
-                        <li>
-                            <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Billing</a>
-                        </li>
-                        <li>
-                            <a href="#" class="bg-red-600 text-white  flex items-center w-full p-2 transition duration-75 rounded-lg pl-11 group">Logout</a>
-                        </li>
-                    </ul>
-                </div>
+      </div>
+      <p class="mt-4 text-gray-700">Join for free career tips!</p>
+      <div class="mt-4 flex items-center gap-2">
+        <input type="email" placeholder="Email@example.com" class="px-4 py-2 border rounded-md w-64 focus:outline-none focus:ring-2 focus:ring-purple-500">
+        <button class="bg-purple-500 text-white px-4 py-2 rounded-md hover:bg-purple-600">Sign up</button>
+      </div>
+      <div class="flex justify-center md:justify-start mt-4 space-x-4">
+        <a href="#" class="text-gray-700 hover:text-purple-500">📷</a>
+        <a href="#" class="text-gray-700 hover:text-purple-500">🐦</a>
+        <a href="#" class="text-gray-700 hover:text-purple-500">✉️</a>
+      </div>
     </div>
-
-    <div class="border  w-full min-h-screen">
-
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-6 text-center md:text-left">
+      <div>
+        <h3 class="font-semibold text-gray-900">Company</h3>
+        <ul class="mt-2 space-y-2 text-gray-700">
+          <li><a href="#" class="hover:text-purple-500">Product</a></li>
+          <li><a href="#" class="hover:text-purple-500">Features</a></li>
+          <li><a href="#" class="hover:text-purple-500">Power</a></li>
+          <li><a href="#" class="hover:text-purple-500">Pricing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold text-gray-900">Social media</h3>
+        <ul class="mt-2 space-y-2 text-gray-700">
+          <li><a href="#" class="hover:text-purple-500">Instagram</a></li>
+          <li><a href="#" class="hover:text-purple-500">Facebook</a></li>
+          <li><a href="#" class="hover:text-purple-500">LinkedIn</a></li>
+          <li><a href="#" class="hover:text-purple-500">Twitter</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold text-gray-900">Webflow stuff</h3>
+        <ul class="mt-2 space-y-2 text-gray-700">
+          <li><a href="#" class="hover:text-purple-500">Style Guide</a></li>
+          <li><a href="#" class="hover:text-purple-500">Licensing</a></li>
+          <li><a href="#" class="hover:text-purple-500">Instructions</a></li>
+          <li><a href="#" class="hover:text-purple-500">Change Log</a></li>
+        </ul>
+      </div>
     </div>
-
+  </div>
+  <div class="w-full flex text-gray-600 justify-center border-t pt-4">
+<div class="xl:w-[1284px] flex items-center justify-between">
+<p>CREATED BY <a href="#" class="font-semibold hover:text-purple-500">OVERSIGHT</a></p>
+<p>POWERED BY <a href="#" class="font-semibold hover:text-purple-500">WEBFLOW</a></p>
 </div>
+  </div>
+</footer>
+</main>
 
 <?php include("./template/footer.php") ?>

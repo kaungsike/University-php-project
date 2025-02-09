@@ -7,3 +7,5 @@
     <link rel="stylesheet" href="./src/output.css">
 </head>
 <body>
+
+<?php include("./__sql_connection.php") ?>

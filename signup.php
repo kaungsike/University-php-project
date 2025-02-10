@@ -87,7 +87,7 @@
 
                 <p class="text-center text-gray-600 text-sm mt-4">
                     Already have an account?
-                    <a href="./login.php" class="text-blue-500 hover:underline">Sign In</a>
+                    <a href="./signin.php" class="text-blue-500 hover:underline">Sign In</a>
                 </p>
             </div>
         </div>
